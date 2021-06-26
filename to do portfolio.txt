@@ -1,0 +1,9 @@
+To-Do Portfolio:
+
+1. finish first page (Homepage)
+
+2. design wireframe for project pages (LA-Projects)
+
+3. code project pages (LA-Projects)
+
+object-fit

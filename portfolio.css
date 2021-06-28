@@ -7,17 +7,30 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.header{
+  background-color: #474747;
+  color: white;
+}
+
+.header p{
+ font-size: 30px;
+}
+
 .justify-content-center h3:hover {
   color: black;
 }
 
 
 .background1 {
-  background-color: grey;
+  background-color: #595959;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.background1:hover {
+  opacity: 0.7;
   background-image: url("./Images/business_mobile2.jpg");
   background-size: cover;
 }
@@ -27,10 +40,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .background2 {
-  background-color: green;
+  background-color: #7f7f7f;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -39,32 +53,54 @@ body {
 
 .background2:hover {
   opacity: 0.7;
+  background-image: url("./Images/LA-Projects_mobile.jpg");
+  background-size: cover;
 }
 
 .background3 {
-  background-color: blue;
+  background-color: #a5a5a5;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
+}
+
+.background3:hover {
+  opacity: 0.7;
+  background-image: url("./Images/WEB-Projects_mobile.png");
+  background-size: cover;
 }
 
 .background4 {
-  background-color: pink;
+  background-color: #cccccc;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.background4:hover {
+  opacity: 0.7;
+  background-image: url("./Images/blog_mobile.jpg");
+  background-size: cover;
 }
 
 .background5 {
-  background-color: grey;
+  background-color: #d6d6d6;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.background5:hover {
+  opacity: 0.7;
+}
+
+
+
+/* Desktop Version  Home*/
 @media only screen and (min-width: 992px) {
   .background1 {
     height: 600px;
@@ -78,23 +114,116 @@ body {
     height: 600px;
   }
 
+  .background1:hover {
+    opacity: 0.7;
+    background-image: url("./Images/business_desktop.jpg");
+    background-size: cover;
+  }
+
   .background2 {
     height: 600px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .background2:hover {
+    opacity: 0.7;
+    background-image: url("./Images/LA-Projects_desktop.jpg");
+    background-size: cover;
   }
 
   .background3 {
     height: 600px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .background3:hover {
+    opacity: 0.7;
+    background-image: url("./Images/WEB-Projects_desktop.png");
+    background-size: cover;
   }
 
   .background4 {
     height: 600px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .background4:hover {
+    opacity: 0.7;
+    background-image: url("./Images/blog_desktop.jpg");
+    background-size: cover;
   }
 
   .background5 {
     height: 600px;
+    overflow: hidden;
+    padding: 0;
+   
   }
-
   header {
     margin-bottom: 0;
   }
+}
+
+
+
+/* Page About Me*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: none;
+  position: relative;
+  color: #555;
+}
+
+header {
+  width: 100%;
+  
+}
+
+main {
+  display: flex;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #a3cef1;
+  text-transform: uppercase;
+  height: 80px;
+  
+
+}
+
+/* Links inside the navbar */
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+li {
+  padding-top: 35px;
+  padding-left: 10px;
+  color: #6d6875;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+
+.navbar h1 {
+  font-weight: 300;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: #6d6875;
+  padding: 30px 30px;
+  text-decoration: none;
+  letter-spacing: 3px;
 }

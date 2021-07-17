@@ -1,6 +1,0 @@
-current repository:
-portfolio
-current branch:
-picturesincolumns
---> write summary then commit
---> publish branch

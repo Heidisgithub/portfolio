@@ -1,4 +1,0 @@
-to do portfolio:
-
-la-projects:
-change button color

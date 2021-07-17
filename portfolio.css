@@ -2,27 +2,41 @@ body {
   height: 100%;
 }
 
+/* HOME Mobile*/
 .justify-content-center {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+
 }
 
 .header{
   background-color: #474747;
   color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Montserrat Alternates', sans-serif;
+
 }
 
 .header p{
  font-size: 30px;
 }
 
-.justify-content-center h3:hover {
+.justify-content-center a:hover {
   color: black;
 }
 
+.justify-content-center a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+}
 
 .background1 {
-  background-color: #595959;
+  background-color: #274c77;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -44,7 +58,7 @@ body {
 }
 
 .background2 {
-  background-color: #7f7f7f;
+  background-color: #6096ba;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -58,7 +72,7 @@ body {
 }
 
 .background3 {
-  background-color: #a5a5a5;
+  background-color: #a3cef1;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -73,7 +87,7 @@ body {
 }
 
 .background4 {
-  background-color: #cccccc;
+  background-color: #d0e2f0;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -87,7 +101,7 @@ body {
 }
 
 .background5 {
-  background-color: #d6d6d6;
+  background-color: #e7ecef;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -100,7 +114,7 @@ body {
 
 
 
-/* Desktop Version  Home*/
+/* Desktop Version Home*/
 @media only screen and (min-width: 992px) {
   .background1 {
     height: 600px;
@@ -169,61 +183,259 @@ body {
 
 
 
-/* Page About Me*/
-* {
-  margin: 0;
-  padding: 0;
+/* ABOUT ME Mobile*/
+.content {
+  background-color: #d0e2f0;
 }
 
-body {
-  background-color: none;
-  position: relative;
-  color: #555;
+.profile img {
+  height: 500px;
+  margin-top: 30px;
+  padding-left: 30px;
 }
 
-header {
-  width: 100%;
+.profile p{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-top: 50px;
+  text-align: justify;
+  background-color: #d0e2f0;
+}
+
+.profile h3{
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-nav {
+align-items: flex-start;}
+
+
+/* Desktop Version About Me*/
+@media only screen and (min-width: 992px) {
+  .navbar-nav {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
   
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ 
+  .profile img {
+    height: 500px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d0e2f0;
+  }
+
+  .profile p{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 50px;
+    text-align: justify;
+  }
+
+  .profile h3{
+    padding-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.navbar>div>ul>li {
+  font-family: 'Montserrat Alternates', sans-serif;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+  
+
+
+
+
+/* HOME */
+header {
+  width: 100%; 
 }
 
 main {
   display: flex;
+  padding-top: 38px;
+  
 }
 
-/* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #a3cef1;
-  text-transform: uppercase;
-  height: 80px;
+
+/* LA-PROJECTS Mobile*/
+  .baselButton {
+    background-color: #274c77;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .baselButton:hover {
+    opacity: 0.7;
+    background-image: url("./Images/Basel_desktop.jpg");
+    background-size: cover;
+  }
+  
+  .HamburgButton {
+    background-color: #6096ba;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .HamburgButton:hover {
+    opacity: 0.7;
+    background-image: url("./Images/Basel_desktop.jpg");
+    background-size: cover;
+  }
+ 
   
 
-}
 
-/* Links inside the navbar */
-ul {
+
+/* LA-PROJECTS Desktop*/
+@media only screen and (min-width: 992px) {
+    .baselButton {
+      height: 100px;
+      overflow: hidden;
+      padding: 0;
+      background-color: #274c77;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .baselButton:hover {
+      opacity: 0.7;
+      background-image: none;
+      cursor: default;
+    }
+    
+    .HamburgButton {
+      height: 100px;
+      overflow: hidden;
+      padding: 0;
+      background-color: #6096ba;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .HamburgButton:hover {
+      opacity: 0.7;
+      background-image: none;
+      cursor: default;
+    }
+
+    .background-image {
+     background-image: url("./Images/Basel_desktop.jpg");
+     background-color: #595959;
+     margin-top: 45px;
+     background-size: cover;
+
+   }
+  }  
+
+
+
+
+
+
+
+
+
+
+/* WEB-PROJECTS */
+.btn {
   display: flex;
-  list-style-type: none;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;  
+
 }
-
-li {
-  padding-top: 35px;
-  padding-left: 10px;
-  color: #6d6875;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
-
-
-.navbar h1 {
-  font-weight: 300;
-  float: left;
-  font-size: 25px;
-  font-weight: bold;
-  color: #6d6875;
-  padding: 30px 30px;
+.btnBasel {
+  background-color: #6096ba;
+  border: none;
+  color: white;
+  padding: 30px 80px;
+  text-align: center;
   text-decoration: none;
-  letter-spacing: 3px;
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px 5px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.btnHamburg {
+  background-color: #274c77;
+  border: none;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 100px;
+
+}
+
+
+/* WEB-PROJECTS Desktop */
+@media only screen and (min-width: 992px) {
+  .btn {
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+
+/* FOOTER*/
+.icontxt {
+  color:#474747;
 }

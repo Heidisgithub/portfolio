@@ -43,7 +43,7 @@ body {
 
 .backgroundaboutme:hover {
   opacity: 0.7;
-  background-image: url("./Images/business_mobile2.jpg");
+  background-image: url("./images/business_mobile2.jpg");
   background-size: cover;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .backgroundla:hover {
   opacity: 0.7;
-  background-image: url("./Images/LA-Projects_mobile.jpg");
+  background-image: url("./images/LA-Projects_mobile.jpg");
   background-size: cover;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .backgroundweb:hover {
   opacity: 0.7;
-  background-image: url("./Images/WEB-Projects_mobile.png");
+  background-image: url("./images/WEB-Projects_mobile.png");
   background-size: cover;
 }
 
@@ -92,7 +92,7 @@ body {
 
 .backgroundblog:hover {
   opacity: 0.7;
-  background-image: url("./Images/blog_mobile.jpg");
+  background-image: url("./images/blog_mobile.jpg");
   background-size: cover;
 }
 
@@ -166,7 +166,7 @@ body {
     height: 600px;
     overflow: hidden;
     padding: 0;
-    background-image: url("./Images/business_desktop.jpg");
+    background-image: url("./images/business_desktop.jpg");
     background-size: cover;
   }
 
@@ -176,7 +176,7 @@ body {
 
   .backgroundaboutme:hover {
     opacity: 0.7;
-    background-image: url("./Images/business_desktop.jpg");
+    background-image: url("./images/business_desktop.jpg");
     background-size: cover;
   }
 
@@ -188,7 +188,7 @@ body {
 
   .backgroundla:hover {
     opacity: 0.7;
-    background-image: url("./Images/LA-Projects_desktop.jpg");
+    background-image: url("./images/LA-Projects_desktop.jpg");
     background-size: cover;
   }
 
@@ -200,7 +200,7 @@ body {
 
   .backgroundweb:hover {
     opacity: 0.7;
-    background-image: url("./Images/WEB-Projects_desktop.png");
+    background-image: url("./images/WEB-Projects_desktop.png");
     background-size: cover;
   }
 
@@ -212,7 +212,7 @@ body {
 
   .backgroundblog:hover {
     opacity: 0.7;
-    background-image: url("./Images/blog_desktop.jpg");
+    background-image: url("./images/blog_desktop.jpg");
     background-size: cover;
   }
 
@@ -352,7 +352,7 @@ header {
 
 .baselBtn:hover {
   opacity: 0.7;
-  background-image: url("./Images/Basel_desktop.jpg");
+  background-image: url("./images/Basel_desktop.jpg");
   background-size: cover;
 }
 
@@ -366,7 +366,7 @@ header {
 
 .hamburgBtn:hover {
   opacity: 0.7;
-  background-image: url("./Images/oxpark/oxpark3.jpg");
+  background-image: url("./images/oxpark/oxpark3.jpg");
   background-size: cover;
 }
 
@@ -616,7 +616,7 @@ header {
 
 .blogButton:hover {
   opacity: 0.7;
-  background-image: url("./Images/blog_mobile.jpg");
+  background-image: url("./images/blog_mobile.jpg");
   background-size: cover;
 }
 
@@ -639,7 +639,7 @@ header {
   }
 
   .blogimg {
-    background-image: url("./Images/blog_mobile.jpg");
+    background-image: url("./images/blog_mobile.jpg");
     background-size: cover;
   }
 }

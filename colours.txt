@@ -1,0 +1,21 @@
+backgroundaboutme
+  background-color: #274c77;
+
+
+backgroundla {
+  background-color: #6096ba;
+
+
+
+backgroundweb {
+  background-color: #a3cef1;
+
+
+
+backgroundblog {
+  background-color: #d0e2f0;
+
+
+
+backgroundcontact {
+  background-color: #e7ecef;

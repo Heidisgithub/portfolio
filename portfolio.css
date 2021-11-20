@@ -5,23 +5,21 @@ body {
 /* HOME Mobile*/
 .justify-content-center {
   color: white;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   cursor: pointer;
-
 }
 
-.header{
+.header {
   background-color: #474747;
   color: white;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-family: 'Montserrat Alternates', sans-serif;
-
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
-.header p{
- font-size: 30px;
+.header p {
+  font-size: 30px;
 }
 
 .justify-content-center a:hover {
@@ -35,7 +33,7 @@ body {
   text-align: center;
 }
 
-.background1 {
+.backgroundaboutme {
   background-color: #274c77;
   height: 200px;
   display: flex;
@@ -43,7 +41,7 @@ body {
   align-items: center;
 }
 
-.background1:hover {
+.backgroundaboutme:hover {
   opacity: 0.7;
   background-image: url("./Images/business_mobile2.jpg");
   background-size: cover;
@@ -54,10 +52,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
-.background2 {
+.backgroundla {
   background-color: #6096ba;
   height: 200px;
   display: flex;
@@ -65,28 +62,27 @@ body {
   align-items: center;
 }
 
-.background2:hover {
+.backgroundla:hover {
   opacity: 0.7;
   background-image: url("./Images/LA-Projects_mobile.jpg");
   background-size: cover;
 }
 
-.background3 {
+.backgroundweb {
   background-color: #a3cef1;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
-.background3:hover {
+.backgroundweb:hover {
   opacity: 0.7;
   background-image: url("./Images/WEB-Projects_mobile.png");
   background-size: cover;
 }
 
-.background4 {
+.backgroundblog {
   background-color: #d0e2f0;
   height: 200px;
   display: flex;
@@ -94,13 +90,13 @@ body {
   align-items: center;
 }
 
-.background4:hover {
+.backgroundblog:hover {
   opacity: 0.7;
   background-image: url("./Images/blog_mobile.jpg");
   background-size: cover;
 }
 
-.background5 {
+.backgroundcontact {
   background-color: #e7ecef;
   height: 200px;
   display: flex;
@@ -108,15 +104,65 @@ body {
   align-items: center;
 }
 
-.background5:hover {
+.backgroundcontact:hover {
   opacity: 0.7;
 }
 
+/* Mobile Version sidenav*/
+@media screen and (max-height: 992px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
 
-/* Desktop Version Home*/
-@media only screen and (min-width: 992px) {
-  .background1 {
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebarDropdown {
+  color: white;
+}
+
+.sidebarDropdown a {
+  font-size: 25px;
+}
+
+/* Desktop Version HOME*/
+@media only screen and (min-width: 768px) {
+  .backgroundaboutme {
     height: 600px;
     overflow: hidden;
     padding: 0;
@@ -124,64 +170,61 @@ body {
     background-size: cover;
   }
 
-  .background1 img {
+  .backgroundaboutme img {
     height: 600px;
   }
 
-  .background1:hover {
+  .backgroundaboutme:hover {
     opacity: 0.7;
     background-image: url("./Images/business_desktop.jpg");
     background-size: cover;
   }
 
-  .background2 {
+  .backgroundla {
     height: 600px;
     overflow: hidden;
     padding: 0;
   }
 
-  .background2:hover {
+  .backgroundla:hover {
     opacity: 0.7;
     background-image: url("./Images/LA-Projects_desktop.jpg");
     background-size: cover;
   }
 
-  .background3 {
+  .backgroundweb {
     height: 600px;
     overflow: hidden;
     padding: 0;
   }
 
-  .background3:hover {
+  .backgroundweb:hover {
     opacity: 0.7;
     background-image: url("./Images/WEB-Projects_desktop.png");
     background-size: cover;
   }
 
-  .background4 {
+  .backgroundblog {
     height: 600px;
     overflow: hidden;
     padding: 0;
   }
 
-  .background4:hover {
+  .backgroundblog:hover {
     opacity: 0.7;
     background-image: url("./Images/blog_desktop.jpg");
     background-size: cover;
   }
 
-  .background5 {
+  .backgroundcontact {
     height: 600px;
     overflow: hidden;
     padding: 0;
-   
   }
   header {
     margin-bottom: 0;
   }
 }
-
-
 
 /* ABOUT ME Mobile*/
 .content {
@@ -194,7 +237,7 @@ body {
   padding-left: 30px;
 }
 
-.profile p{
+.profile p {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 10px;
@@ -204,13 +247,17 @@ body {
   background-color: #d0e2f0;
 }
 
-.profile h3{
+.profile h3 {
   padding-left: 30px;
   margin-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #424242;
 }
 
 .navbar-brand {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -225,30 +272,35 @@ body {
 }
 
 .navbar-nav {
-align-items: flex-start;}
+  align-items: flex-start;
+}
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 /* Desktop Version About Me*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .navbar-nav {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
-  
   }
-  
+
   .navbar-collapse {
     display: flex;
     justify-content: flex-end;
     padding-right: 30px;
+  }
 
-}
+  .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-.nav-item {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
- 
   .profile img {
     height: 500px;
     margin-top: 0px;
@@ -261,7 +313,7 @@ align-items: flex-start;}
     background-color: #d0e2f0;
   }
 
-  .profile p{
+  .profile p {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 10px;
@@ -270,191 +322,436 @@ align-items: flex-start;}
     text-align: justify;
   }
 
-  .profile h3{
+  .profile h3 {
     padding-left: 30px;
     margin-top: 30px;
   }
 }
 
-.navbar>div>ul>li {
-  font-family: 'Montserrat Alternates', sans-serif;
+.navbar > div > ul > li {
+  font-family: "Montserrat Alternates", sans-serif;
   white-space: nowrap;
   display: flex;
   justify-content: space-around;
-
 }
-
-  
-
-
-
 
 /* HOME */
 header {
-  width: 100%; 
+  width: 100%;
 }
-
-main {
-  display: flex;
-  padding-top: 38px;
-  
-}
-
 
 /* LA-PROJECTS Mobile*/
-  .baselButton {
-    background-color: #274c77;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
 
-  .baselButton:hover {
-    opacity: 0.7;
-    background-image: url("./Images/Basel_desktop.jpg");
-    background-size: cover;
-  }
-  
-  .HamburgButton {
-    background-color: #6096ba;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .HamburgButton:hover {
-    opacity: 0.7;
-    background-image: url("./Images/Basel_desktop.jpg");
-    background-size: cover;
-  }
- 
-  
-
-
-
-/* LA-PROJECTS Desktop*/
-@media only screen and (min-width: 992px) {
-    .baselButton {
-      height: 100px;
-      overflow: hidden;
-      padding: 0;
-      background-color: #274c77;
-      margin-top: 100px;
-      margin-bottom: 100px;
-    }
-
-    .baselButton:hover {
-      opacity: 0.7;
-      background-image: none;
-      cursor: default;
-    }
-    
-    .HamburgButton {
-      height: 100px;
-      overflow: hidden;
-      padding: 0;
-      background-color: #6096ba;
-      margin-top: 100px;
-      margin-bottom: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .HamburgButton:hover {
-      opacity: 0.7;
-      background-image: none;
-      cursor: default;
-    }
-
-    .background-image {
-     background-image: url("./Images/Basel_desktop.jpg");
-     background-color: #595959;
-     margin-top: 45px;
-     background-size: cover;
-   }
-
-
-/*Photo grid */
-.imgrow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-
-}
-
-/* Create two equal columns that sits next to each other */
-.imgcolumn {
-  flex: 50%;
-  padding: 0 4px;
-}
-
-.imgcolumn img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-  }  
-
-
-
-
-
-
-
-
-
-
-/* WEB-PROJECTS */
-.btn {
+.baselBtn {
+  background-color: #6096ba;
+  height: 200px;
   display: flex;
   justify-content: center;
-  flex-direction: column;  
-
-}
-.btnBasel {
-  background-color: #6096ba;
-  border: none;
-  color: white;
-  padding: 30px 80px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  margin: 10px 5px;
-  cursor: pointer;
-  margin-top: 100px;
+  align-items: center;
 }
 
-.btnHamburg {
+.baselBtn:hover {
+  opacity: 0.7;
+  background-image: url("./Images/Basel_desktop.jpg");
+  background-size: cover;
+}
+
+.hamburgBtn {
+  background-color: #a3cef1;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburgBtn:hover {
+  opacity: 0.7;
+  background-image: url("./Images/oxpark/oxpark3.jpg");
+  background-size: cover;
+}
+
+/*Photo grid */
+
+.hamburgcontent {
+  padding-top: 50px;
+  padding-left: 16px;
+  padding-right: 10px;
+}
+
+/* Desktop Version baselprojects*/
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .containerGallery {
+    margin: 0 auto;
+    width: 1140px;
+  }
+
+  h3 {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #424242;
+  }
+
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+
+  .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+  }
+
+  .item:hover {
+    flex: 7;
+  }
+
+  .item-1 {
+    background-image: url("./images/voltamatte/voltaplan1.jpg");
+  }
+
+  .item-2 {
+    background-image: url("./images/voltamatte/volta3.jpg");
+  }
+
+  .item-3 {
+    background-image: url("./images/voltamatte/voltaplan2.jpg");
+  }
+
+  .item-4 {
+    background-image: url("./images/voltamatte/volta2-2.jpg");
+  }
+
+  .item-5 {
+    background-image: url("./images/voltamatte/volta8.jpg");
+  }
+
+  .item-6 {
+    background-image: url("./images/ukbb/ukbb1.jpg");
+  }
+
+  .item-7 {
+    background-image: url("./images/ukbb/ukbbplan1.jpg");
+  }
+
+  .item-8 {
+    background-image: url("./images/ukbb/ukbb2.JPG");
+  }
+
+  .item-9 {
+    background-image: url("./images/ukbb/ukbbplan2.jpg");
+  }
+
+  .item-10 {
+    background-image: url("./images/ukbb/ukbb3.jpg");
+  }
+
+  .item-11 {
+    background-image: url("./images/hansaplatz/hansa2.jpg");
+  }
+
+  .item-12 {
+    background-image: url("./images/hansaplatz/hansa1.jpg");
+  }
+
+  .item-13 {
+    background-image: url("./images/hansaplatz/hansaplan1.jpg");
+  }
+
+  .item-14 {
+    background-image: url("./images/hansaplatz/hansa4.jpg");
+  }
+
+  .item-15 {
+    background-image: url("./images/hansaplatz/hansa3.jpg");
+  }
+
+  .item-16 {
+    background-image: url("./images/oxpark/oxplan1.jpg");
+  }
+
+  .item-17 {
+    background-image: url("./images/oxpark/oxpark1.jpg");
+  }
+
+  .item-18 {
+    background-image: url("./images/oxpark/oxpark2.jpg");
+  }
+
+  .item-19 {
+    background-image: url("./images/oxpark/oxpark3.jpg");
+  }
+
+  .item-20 {
+    background-image: url("./images/oxpark/oxpark4.jpg");
+  }
+
+  .item-21 {
+    background-image: url("https://andreswbs.github.io/cookbook/index.html");
+  }
+}
+
+/* baselprojects MOBILE*/
+
+.containerGallery {
+  padding-top: 30px;
+}
+
+.containerGallery p {
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.containerGallery h3 {
+  padding-left: 30px;
+  margin-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.gallery-wrap {
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+/* LA-PROJECTS Desktop*/
+@media only screen and (min-width: 768px) {
+}
+
+/* WEB-PROJECTS Mobile*/
+.cookbookBtn {
   background-color: #274c77;
-  border: none;
-  color: white;
-  padding: 30px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  margin: 10px 5px;
-  cursor: pointer;
-  margin-bottom: 100px;
-
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.cookbookBtn:hover {
+  opacity: 0.7;
+  background-image: url("./images/webprojects/chefs.jpg");
+  background-size: cover;
+}
+
+.todoBtn {
+  background-color: #6096ba;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoBtn:hover {
+  opacity: 0.7;
+  background-image: url("./images/webprojects/thumbs_down2.jpg");
+  background-size: contain;
+}
+
+.hikeBtn {
+  background-color: #a3cef1;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hikeBtn:hover {
+  opacity: 0.7;
+  background-image: url("./images/webprojects/cliffs-gd9d3610ab_1920.jpg");
+  background-size: cover;
+}
 
 /* WEB-PROJECTS Desktop */
-@media only screen and (min-width: 992px) {
-  .btn {
-    flex-direction: row;
+@media only screen and (min-width: 768px) {
+}
+
+/* BLOG Mobile*/
+.blogcontent {
+  background-color: #d0e2f0;
+  padding-left: 16px;
+  padding-right: 10px;
+}
+.blogcontent h3 {
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+.blogcontent p {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+}
+
+.blogButton {
+  background-color: #274c77;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.blogButton:hover {
+  opacity: 0.7;
+  background-image: url("./Images/blog_mobile.jpg");
+  background-size: cover;
+}
+
+/* BLOG Desktop*/
+/* LA-PROJECTS Desktop*/
+@media only screen and (min-width: 768px) {
+  .blogButton {
+    height: 100px;
+    overflow: hidden;
+    padding: 0;
+    background-color: #274c77;
     margin-top: 100px;
     margin-bottom: 100px;
   }
+
+  .blogButton:hover {
+    opacity: 0.7;
+    background-image: none;
+    cursor: default;
+  }
+
+  .blogimg {
+    background-image: url("./Images/blog_mobile.jpg");
+    background-size: cover;
+  }
 }
 
+/* CONTACT*/
+
+.contactForm {
+  padding-top: 30px;
+}
+
+.contactForm p {
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.contactForm h3 {
+  padding-left: 30px;
+  margin-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
+}
+
+.registration form {
+  width: 50%;
+}
+
+.inputfields {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 20px;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.messagebox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.messagebox textarea {
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.labelfield {
+  padding-bottom: 5px;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.sendbutton {
+  padding-bottom: 20px;
+  padding-top: 15px;
+  font-size: 1.5rem;
+}
 
 /* FOOTER*/
-.icontxt {
-  color:#474747;
+.footer-text {
+  color: #adb5bd;
+}
+
+/*test*/
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
